@@ -1,0 +1,81 @@
+.hero {
+    .title {
+        color: #fff;
+        font-family: Syne, sans-serif;
+    }
+}
+
+/* start section two  */
+.second {
+    color: #fff;
+}
+
+.second h1 {
+    font-family: syne, sans-serif;
+}
+
+.second p {
+    color: #A8A8A8;
+    font-family: Rubik;
+}
+
+.second .image {
+    width: 454px;
+}
+
+.second .image::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border: 2px solid #FF9142;
+    border-radius: 30px;
+    padding: 13px;
+    right: 1%;
+    top: -3%;
+}
+
+.second .image::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    transform: rotate(90deg);
+    border: 2px solid #FF9142;
+    border-radius: 30px;
+    padding: 20px;
+    left: -17%;
+    bottom: 20%;
+}
+
+@media (min-width:992px) {
+    .second h1 {
+        font-family: syne, sans-serif;
+        font-size: 56px !important;
+    }
+}
+
+/* end section two */
+
+/* start third section */
+.third {
+    color: #fff;
+}
+
+.third h1 {
+    font-family: syne, sans-serif;
+}
+
+/* end third section */
+
+/* start four section  */
+.four {
+    color: #fff;
+    font-family: Syne, sans-serif;
+}
+
+.four q{
+    font-family: Rubik;
+    color: #949494;
+}
+/* end four section  */

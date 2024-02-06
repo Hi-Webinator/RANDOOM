@@ -1,0 +1,9 @@
+.workCard .card {
+    border: none;
+    background-color: transparent;
+}
+
+.workCard .card img {
+    border-radius: 13px;
+    height: 300px;
+}

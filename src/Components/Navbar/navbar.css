@@ -1,0 +1,26 @@
+
+
+.navbar {
+    background-color: #1A1A1A;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar .navbar-nav{
+    color: #ffffff;
+}
+
+.navbar button {
+    background-color: rgb(3, 3, 4, 50%);
+    color: #fff;
+    border: 1.5px solid #fff;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.navbar button:hover{
+    background-color: rgb(3, 3, 4, 50%);
+    color: #fff;
+    border: 1.5px solid #FF9142;
+    border-radius: 30px;
+}

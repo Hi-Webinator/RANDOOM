@@ -1,0 +1,54 @@
+.about {
+    color: #fff;
+    font-family: Syne, sans-serif;
+}
+
+.about .title {
+    font-family: Syne, sans-serif;
+}
+
+.about .desc {
+    font-family: Rubik;
+    color: #949494;
+    line-height: 33px;
+}
+
+.about .image img {
+    height: 450px;
+    width: 100%;
+}
+
+.about .image.per1::after {
+    content: "";
+    position: absolute;
+    width: 115px;
+    height: 20px;
+    border: 2px solid #FF9142;
+    padding: 15px;
+    border-radius: 30px;
+    left: -12%;
+    top: 9.5%;
+    transform: rotate(90deg);
+}
+
+.about .image.per2::after {
+    content: "";
+    position: absolute;
+    width: 115px;
+    height: 20px;
+    border: 2px solid #FF9142;
+    padding: 15px;
+    border-radius: 30px;
+    right: 0%;
+    bottom: -4%;
+}
+
+.about .link {
+    color: #949494;
+}
+
+@media (min-width:991px) {
+    .about .title {
+        font-size: 68px;
+    }
+}

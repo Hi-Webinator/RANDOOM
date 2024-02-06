@@ -1,0 +1,21 @@
+.card {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: Rubik;
+}
+
+.card img {
+    border-radius: 12px;
+    height: 400px;
+}
+
+.card .card-title .line {
+    width: 50px;
+    height: 2px;
+    background-color: #FF9142;
+}
+
+.card .type {
+    color: #606060;
+}

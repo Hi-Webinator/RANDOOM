@@ -1,0 +1,11 @@
+.work {
+    color: #fff;
+}
+
+
+@media (min-width:991px) {
+    .work .title {
+        font-size: 56px !important;
+    }
+
+}

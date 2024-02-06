@@ -1,0 +1,17 @@
+.footer {
+    background-color: #131313;
+    color: #fff;
+    font-family: Syne, sans-serif;
+}
+
+.footer .title {
+    color: #FF9142;
+}
+
+.footer .line {
+    background-color: #949494;
+    width: 100%;
+    height: 2px;
+}
+
+/* .footer .title {} */
