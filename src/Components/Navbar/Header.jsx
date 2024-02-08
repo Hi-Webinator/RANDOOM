@@ -1,25 +1,47 @@
 import { Navbar, Container, Nav, Form, Button } from "react-bootstrap"
+import { FaBars, FaBarsStaggered } from "react-icons/fa6";
 
 import './navbar.css';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+    const [toggle, setToggle] = useState(false)
+    const handleToggle = () => {
+        setToggle(!toggle)
+    }
+
+
     return (
         <div>
             <Navbar expand="lg" className="pt-3">
                 <Container>
-                    <Navbar.Brand href="/" className="text-white">RANDOOM</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Link to="/" className="text-decoration-none">
+                        <Navbar.Brand href="/" className="text-white">
+                            RAND
+                            <span>OO</span>
+                            M
+                        </Navbar.Brand>
+                    </Link>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle}>
+                        {toggle ? <FaBarsStaggered /> : <FaBars />}
+                    </Navbar.Toggle>
+
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Link to="/" className="text-decoration-none text-white text-uppercase me-3">Home</Link>
-                            <Link to="/about" className="text-decoration-none text-white text-uppercase me-3">About Me</Link>
-                            <Link to="/works" className="text-decoration-none text-white text-uppercase me-5">My Works</Link>
+                            <NavLink to="/home" className="item text-decoration-none text-uppercase me-lg-3 mb-3 mb-lg-0">
+                                Home
+                            </NavLink>
+                            <NavLink to="/about" className="item text-decoration-none text-uppercase me-lg-3 mb-3 mb-lg-0 ms-5 ms-lg-0">
+                                About Me
+                            </NavLink>
+                            <NavLink to="/works" className="item text-decoration-none text-uppercase me-lg-5 mb-3 mb-lg-0">
+                                My Works
+                            </NavLink>
                         </Nav>
-                        <Link to="/contact">
+                        <NavLink to="/contact">
                             <Button variant="rounded-pill ps-4 pe-4">Contact</Button>
-                        </Link>
-                        
+                        </NavLink>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

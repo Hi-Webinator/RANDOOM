@@ -1,14 +1,48 @@
-
-
 .navbar {
     background-color: #1A1A1A;
     color: #fff;
     font-family: "Rubik", sans-serif;
 }
 
-.navbar .navbar-nav{
-    color: #ffffff;
+.navbar .navbar-brand span {
+    color: #FF9142;
+    /* font-family: Syne, sans-serif; */
+    /* font-size: 20px; */
 }
+
+.navbar .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    transition: .4s;
+}
+
+.navbar .navbar-toggler:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar .navbar-nav .item {
+    color: #ffffff;
+    transition: .4s ;
+}
+
+.navbar .navbar-nav .item:hover {
+    border-bottom: 1px solid #FF9142;
+}
+
+.navbar .navbar-nav .item.active {
+    border-bottom: 1px solid #FF9142;
+}
+
+.navbar .navbar-nav .item.active::first-letter {
+    color: #FF9142;
+}
+
 
 .navbar button {
     background-color: rgb(3, 3, 4, 50%);
@@ -18,7 +52,7 @@
     transition: .5s;
 }
 
-.navbar button:hover{
+.navbar button:hover {
     background-color: rgb(3, 3, 4, 50%);
     color: #fff;
     border: 1.5px solid #FF9142;

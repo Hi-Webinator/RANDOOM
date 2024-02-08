@@ -22,22 +22,22 @@ const Work = () => {
                     subTitle="showcase about works"
                 />
 
-                <Row className='mb-4'>
-                    <Col xs={12} lg={4}>
+                <Row className='mb-5 mb-lg-4 d-flex justify-content-center justify-content-lg-start'>
+                    <Col xs={12} md={6} lg={4} className='mb-3 mb-lg-0'>
                         <WorkCard
                             img={w2}
                             subTitle="NFT"
                             title="Bored Ape Monkey"
                         />
                     </Col>
-                    <Col xs={12} lg={4}>
+                    <Col xs={12} md={6} lg={4} className='mb-3 mb-lg-0'>
                         <WorkCard
                             img={w1}
                             subTitle="NFT"
                             title="Dark Man"
                         />
                     </Col>
-                    <Col xs={12} lg={4}>
+                    <Col xs={12} md={6} lg={4}>
                         <WorkCard
                             img={w3}
                             subTitle="NFT"
@@ -46,15 +46,15 @@ const Work = () => {
                     </Col>
                 </Row>
 
-                <Row className='mb-4'>
-                    <Col xs={12} lg={6}>
+                <Row className='mb-5 mb-lg-4'>
+                    <Col xs={12} md={6} lg={6} className='mb-3 mb-md-0'>
                         <WorkCard
                             img={w4}
                             subTitle="NFT"
                             title="Bear Panda Island"
                         />
                     </Col>
-                    <Col xs={12} lg={6}>
+                    <Col xs={12} md={6} lg={6}>
                         <WorkCard
                             img={w5}
                             subTitle="NFT"
@@ -63,33 +63,34 @@ const Work = () => {
                     </Col>
                 </Row>
 
-                <Row className='mb-4'>
-                    <Col xs={12} lg={4}>
+                <Row className='mb-4 d-flex justify-content-center justify-content-lg-start'>
+                    <Col xs={12} md={6} lg={4} className='mb-3 mb-lg-0'>
                         <WorkCard
                             img={w6}
                             subTitle="NFT"
                             title="Technology Metaverse"
                         />
                     </Col>
-                    <Col xs={12} lg={4}>
+                    <Col xs={12} md={6} lg={4} className='mb-3 mb-lg-0'>
                         <WorkCard
                             img={w8}
                             subTitle="NFT"
                             title="Alien Ghost Sci-fi"
                         />
                     </Col>
-                    <Col xs={12} lg={4}>
+                    <Col xs={12} md={6} lg={4}>
                         <WorkCard
                             img={w7}
                             subTitle="NFT"
                             title="Dream Fantasy Ghost"
                         />
                     </Col>
-
                 </Row>
 
                 <div className='text-center '>
-                    <Button className='mainBtn text-uppercase p-2 ps-4 pe-4'>Load more works</Button>
+                    <Button className='mainBtn text-uppercase p-2 ps-4 pe-4'>
+                        Load more works
+                    </Button>
                 </div>
             </Container>
         </div>

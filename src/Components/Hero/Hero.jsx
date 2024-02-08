@@ -17,7 +17,7 @@ const Hero = () => {
                 <Container>
                     <Row>
                         <Col xs={12} className="text-center">
-                            <h1 className="title fs-1 mb-5">
+                            <h1 className="title fs-1 mb-4 mb-md-5">
                                 Adaptive Logo Design for Your Brand
                             </h1>
                             <Button className="mainBtn ps-5 pe-5 p-3 text-capitalize">
@@ -30,18 +30,20 @@ const Hero = () => {
                     {/* //about */}
                     <section className="second pt-5 mt-5 mb-5">
                         <Row className="d-flex align-items-center justify-content-between">
-                            <Col xs={12} lg={6}>
+                            <Col xs={12} lg={6} className="mb-5 mb-lg-0">
                                 <div className="d-flex flex-column">
                                     <h1 className="fs-1 mb-3">
                                         Let’s get know about me closer
                                     </h1>
-                                    <p className="mb-5">
-                                        Aaronn is a New York-based visual designer focusing
-                                        on branding and visual identity. Her portfolio
-                                        showcases her wide range of work, spanning books,
-                                        posters and web design.
+                                    <p className="mb-4 mb-md-5">
+                                        Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Facere in enim atque.
+                                        Velit dolor incidunt impedit doloremque
+                                        provident pra sunt tenetur cupiditate
+                                        nihil veniam nostrum obcae.
+                                        
                                     </p>
-                                    <div>
+                                    <div className="text-center text-md-start">
                                         <Button className="mainBtn p-3 ps-4 pe-4">
                                             Discover More About Me
                                         </Button>
@@ -68,7 +70,7 @@ const Hero = () => {
                         </div>
 
                         <Row>
-                            <Col xs={12} lg={6} className="mb-5">
+                            <Col xs={12} md={6} lg={6} className="mb-5">
                                 <CardProjects
                                     image={pr1}
                                     title="Non Fungible Token -NFT- Digital Art"
@@ -76,7 +78,7 @@ const Hero = () => {
                                     work="Logo Design & Development"
                                 />
                             </Col>
-                            <Col xs={12} lg={6} className="mb-5">
+                            <Col xs={12} md={6} lg={6} className="mb-5">
                                 <CardProjects
                                     image={pr2}
                                     title="Historical antique statue of david's head"
@@ -84,7 +86,7 @@ const Hero = () => {
                                     work="Logo Design & Development"
                                 />
                             </Col>
-                            <Col xs={12} lg={6} className="mb-5 mb-lg-0">
+                            <Col xs={12} md={6} lg={6} className="mb-5 mb-lg-0">
                                 <CardProjects
                                     image={pr3}
                                     title="Virtual Museum and Metaverse internet"
@@ -92,7 +94,7 @@ const Hero = () => {
                                     work="Logo Design & Development"
                                 />
                             </Col>
-                            <Col xs={12} lg={6} className="mb-5 mb-lg-0">
+                            <Col xs={12} md={6} lg={6} className="mb-0">
                                 <CardProjects
                                     image={pr4}
                                     title="A hundred-dollar bill franklin in glasses"
@@ -104,7 +106,7 @@ const Hero = () => {
                     </section>
 
                     {/* testimonial */}
-                    <section className="four pt-5 mt-5">
+                    <section className="four pt-4 pt-lg-5 mt-5">
                         <div className="d-flex align-items-center justify-content-between mb-4">
                             <h5 className="fs-1 fw-bold">Testimonial</h5>
                             {/* <span className="fs-1">
@@ -124,7 +126,7 @@ const Hero = () => {
                             </q>
                         </Col>
 
-                        <span className="fs-5 fw-bold">-Hi Developer</span>
+                        <span className="fs-5 fw-bold d-flex justify-content-center justify-content-md-start">-Hi Developer</span>
                     </section>
                 </Container>
             </div>

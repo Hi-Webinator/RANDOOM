@@ -13,13 +13,13 @@ const About = () => {
                     subTitle="Little Brief About Myself" />
 
                 <Row className='d-flex align-items-center justify-content-between mb-5 pb-5'>
-                    <Col lg={6}>
-                        <h1 className='title fw-bold'>
+                    <Col xs={12} lg={6}>
+                        <h1 className='title fw-bold mb-3 mb-lg-0'>
                             My mission is to make design easier.
                         </h1>
                     </Col>
 
-                    <Col lg={5}>
+                    <Col xs={12} lg={5}>
                         <p className='desc'>
                             Create custom Designs with AARONN that converts more
                             visitors than any website. With lots of unique design,
@@ -32,12 +32,12 @@ const About = () => {
                 </Row>
 
                 <Row className='d-flex align-items-center justify-content-between mb-5 pb-5'>
-                    <Col lg={5}>
+                    <Col xs={12} md={5} lg={5} className='mb-5 mb-md-0'>
                         <div className="image per1 position-relative">
                             <Image src={per1} className='img-fluid' />
                         </div>
                     </Col>
-                    <Col lg={7}>
+                    <Col xs={12} md={7} lg={7}>
                         <div className="image per2 position-relative">
                             <Image src={per2} className='img-fluid' />
                         </div>
@@ -45,19 +45,19 @@ const About = () => {
                 </Row>
 
                 <div>
-                    <h1 className='fw-bold mb-4'>Follow me on :</h1>
+                    <h1 className='fw-bold mb-4 text-center text-md-start'>Follow me on :</h1>
                 </div>
-                <Row className='text-cente pb-5'>
-                    <Col xs={12} md={6} lg={3}>
+                <Row className='text-center text-md-start pb-5'>
+                    <Col xs={6} md={3} lg={3} className='mb-3 mb-md-0'>
                         <h1 className="link fs-2">Behance</h1>
                     </Col>
-                    <Col xs={12} md={6} lg={3}>
+                    <Col xs={6} md={3} lg={3} className='mb-3 mb-md-0'>
                         <h1 className="link fs-2">Twitter</h1>
                     </Col>
-                    <Col xs={12} md={6} lg={3}>
+                    <Col xs={6} md={3} lg={3}>
                         <h1 className="link fs-2">Facebook</h1>
                     </Col>
-                    <Col xs={12} md={6} lg={3}>
+                    <Col xs={6} md={3} lg={3}>
                         <h1 className="link fs-2">Instagram</h1>
                     </Col>
                 </Row>

@@ -8,7 +8,8 @@ import Contact from '../Components/Contact/Contact';
 const Routers = () => {
     return (
         <Routes>
-            <Route path='/' Component={Hero} />
+            <Route exact path='/' Component={Hero} />
+            <Route path='home' Component={Hero} />
             <Route path='about' Component={About} />
             <Route path='works' Component={Work} />
             <Route path='contact' Component={Contact} />

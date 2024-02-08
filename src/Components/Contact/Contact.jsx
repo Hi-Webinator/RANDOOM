@@ -10,25 +10,26 @@ const Contact = () => {
             <Container>
                 <MainHeader
                     title="Contact Me"
-                    subTitle="For Any Project Knock Us" />
+                    subTitle="For Any Project Knock Us"
+                />
 
                 <Row className='mb-5 pb-5'>
-                    <Col xs={12} lg={6}>
+                    <Col xs={12} lg={6} className='mb-4 mb-lg-0'>
                         <h1 className="title fw-bold">
                             Get in Touch With Us
                         </h1>
                     </Col>
                     <Col xs={12} lg={6}>
                         <Form>
-                            <Form.Group className="mb-4" controlId="formGroupEmail">
+                            <Form.Group className="mb-3 mb-lg-5" controlId="formGroupName">
                                 <Form.Label className='mb-0'>Name</Form.Label>
                                 <Form.Control type="text" />
                             </Form.Group>
-                            <Form.Group className="mb-4" controlId="formGroupEmail">
+                            <Form.Group className="mb-3 mb-lg-5" controlId="formGroupSubject">
                                 <Form.Label className='mb-0'>Subject</Form.Label>
                                 <Form.Control type="text" />
                             </Form.Group>
-                            <Form.Group className="mb-5" controlId="formGroupEmail">
+                            <Form.Group className="mb-4 mb-lg-5" controlId="formGroupMessage">
                                 <Form.Label className='mb-0'>Message</Form.Label>
                                 <Form.Control type="text" />
                             </Form.Group>
@@ -36,6 +37,7 @@ const Contact = () => {
                         </Form>
                     </Col>
                 </Row>
+                
                 <Row>
                     <Col xs={12}>
                         <div className="image mb-5">
@@ -43,9 +45,9 @@ const Contact = () => {
                         </div>
                     </Col>
                     <Col xs={12}>
-                        <div className="d-flex justify-content-center ">
-                            <h1 className="fs-5 me-5">Street Avenue,Morocco</h1>
-                            <h1 className="fs-5 me-5">+123xxxxxxxx</h1>
+                        <div className="d-flex flex-column flex-md-row justify-content-center text-center text-md-start">
+                            <h1 className="fs-5 me-md-4 me-lg-5 mb-3 mb-md-0">Street Avenue,Morocco</h1>
+                            <h1 className="fs-5 me-md-4 me-lg-5 mb-3 mb-md-0">+123xxxxxxxx</h1>
                             <h1 className="fs-5">email@example.com</h1>
                         </div>
                     </Col>

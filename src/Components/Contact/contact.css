@@ -4,7 +4,7 @@
 
 .contact .title {
     font-family: Syne, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .contact form label {
@@ -13,18 +13,26 @@
     text-transform: uppercase;
 }
 
-.contact form input{
+.contact form input {
     border: none;
     background-color: transparent;
     border-bottom: 2px solid #949494;
     border-radius: 0;
 }
 
-.contact form input:focus{
+.contact form input:focus {
     background-color: transparent;
     outline: none;
     box-shadow: none;
     caret-color: #fff;
     border-color: #949494;
     color: #fff;
+}
+
+
+@media (min-width:992px) {
+    .contact .title {
+        font-family: Syne, sans-serif;
+        font-size: 60px;
+    }
 }
