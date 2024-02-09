@@ -1,5 +1,5 @@
 import { Button, Col, Container, Image, Row } from "react-bootstrap"
-import two from '../../assets/Images/2.png';
+import two from '../../assets/Images/man1.jpg';
 import CardProjects from "../ProjectsCard/CardProjects";
 import pr1 from '../../assets/Images/pr1.jpeg'
 import pr2 from '../../assets/Images/pr2.jpeg'

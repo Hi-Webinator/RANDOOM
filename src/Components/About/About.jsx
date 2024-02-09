@@ -1,7 +1,7 @@
 import { Row, Col, Container, Image } from 'react-bootstrap'
 import MainHeader from '../MainHeader/MainHeader';
-import per1 from '../../assets/Images/2.png';
-import per2 from '../../assets/Images/person2.png';
+import per1 from '../../assets/Images/man1.jpg';
+import per2 from '../../assets/Images/man3.jpg';
 
 import './about.css';
 const About = () => {

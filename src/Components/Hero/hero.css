@@ -23,6 +23,11 @@
     width: 454px;
 }
 
+.second .image img {
+    height: 506px;
+    border-radius: 30px;
+}
+
 .second .image::before {
     content: '';
     position: absolute;
@@ -78,8 +83,10 @@
     font-family: Syne, sans-serif;
 }
 
-.four q{
+.four q {
     font-family: Rubik;
     color: #949494;
 }
+
+/* end four section  */
 /* end four section  */
