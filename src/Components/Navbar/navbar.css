@@ -5,7 +5,7 @@
 }
 
 .navbar .navbar-brand span {
-    color: #FF9142;
+    color: #107E57;
     /* font-family: Syne, sans-serif; */
     /* font-size: 20px; */
 }
@@ -28,24 +28,23 @@
 
 .navbar .navbar-nav .item {
     color: #ffffff;
-    transition: .4s ;
+    transition: .3s ease-in-out;
 }
 
 .navbar .navbar-nav .item:hover {
-    border-bottom: 1px solid #FF9142;
+    border-bottom: 2px solid #107E57;
 }
 
 .navbar .navbar-nav .item.active {
-    border-bottom: 1px solid #FF9142;
+    border-bottom: 2px solid #107E57;
 }
 
 .navbar .navbar-nav .item.active::first-letter {
-    color: #FF9142;
+    color: #107E57;
 }
 
-
 .navbar button {
-    background-color: rgb(3, 3, 4, 50%);
+    background-color: #1a1a1a;
     color: #fff;
     border: 1.5px solid #fff;
     border-radius: 30px;
@@ -53,8 +52,8 @@
 }
 
 .navbar button:hover {
-    background-color: rgb(3, 3, 4, 50%);
+    background-color: #1a1a1a;
     color: #fff;
-    border: 1.5px solid #FF9142;
+    border: 1.5px solid #107E57;
     border-radius: 30px;
 }

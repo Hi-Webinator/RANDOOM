@@ -1,9 +1,8 @@
 import { Navbar, Container, Nav, Form, Button } from "react-bootstrap"
 import { FaBars, FaBarsStaggered } from "react-icons/fa6";
-
-import './navbar.css';
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
+import './navbar.css';
 
 const Header = () => {
     const [toggle, setToggle] = useState(false)
@@ -17,7 +16,7 @@ const Header = () => {
             <Navbar expand="lg" className="pt-3">
                 <Container>
                     <Link to="/" className="text-decoration-none">
-                        <Navbar.Brand href="/" className="text-white">
+                        <Navbar.Brand className="text-white">
                             RAND
                             <span>OO</span>
                             M

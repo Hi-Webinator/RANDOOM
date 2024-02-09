@@ -5,13 +5,18 @@
 }
 
 .footer .title {
-    color: #FF9142;
+    color: #107E57;
+    font-weight: 600;
 }
 
 .footer .line {
     background-color: #949494;
     width: 100%;
     height: 2px;
+}
+
+.footer .copyright span{
+    color: #107E57;
 }
 
 /* .footer .title {} */

@@ -11,12 +11,15 @@ const Footer = () => {
         <div className='footer pt-5 pb-4'>
             <Container>
                 <div className="d-flex flex-column mb-5 text-center">
-                    <h1 className="title fs-5">Get in Touch With Us</h1>
-                    <h1 className="subTitle fs-1 fw-bold text-decoration-underline">email@exemple.com</h1>
+                    <h1 className="title fs-4">Get in Touch With Us</h1>
+                    <h1 className="subTitle fs-1 fw-bold text-decoration-underline">email@example.com</h1>
                 </div>
                 <Row>
                     <Col xs={12} lg={4} className="d-flex justify-content-center mb-3 mb-lg-0">
-                        <h1 className="fs-1"> AARONN</h1>
+                        <h1 className="fs-2 fw-bold">
+                            RAND
+                            <span className="title">OO</span>
+                            M</h1>
                     </Col>
                     <Col xs={12} lg={4} className="d-flex justify-content-center mb-3 mb-lg-0">
                         <div className="d-flex flex-column text-center text-lg-start">
@@ -36,8 +39,9 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <span className="line d-block mt-5 mb-3"></span>
-                <div className="d-flex align-items-center justify-content-center fw-bold">
-                    &copy; {date} Developed By Hi-Dev
+                <div className="copyright d-flex align-items-center justify-content-center fw-bold">
+                    &copy; {date} Developed By
+                    <span className="ms-1">Hi-Dev</span>
                 </div>
             </Container>
         </div>

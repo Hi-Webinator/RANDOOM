@@ -5,8 +5,9 @@ import pr1 from '../../assets/Images/pr1.jpeg'
 import pr2 from '../../assets/Images/pr2.jpeg'
 import pr3 from '../../assets/Images/pr3.jpeg'
 import pr4 from '../../assets/Images/pr4.jpeg'
-// import q from '../../assets/Images/q.png';
-// import { PiQuotes } from "react-icons/pi";
+import { motion } from 'framer-motion';
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 import './hero.css';
 
@@ -17,13 +18,24 @@ const Hero = () => {
                 <Container>
                     <Row>
                         <Col xs={12} className="text-center">
-                            <h1 className="title fs-1 mb-4 mb-md-5">
+                            <motion.h1 className="title fs-1 mb-4 mb-md-5"
+                                initial={{ x: -900 }}
+                                animate={{ x: 0 }}
+                                transition={{
+                                    duration: 1,
+                                    ease: "easeInOut"
+                                }}
+                            >
                                 Adaptive Logo Design for Your Brand
-                            </h1>
-                            <Button className="mainBtn ps-5 pe-5 p-3 text-capitalize">
+                            </motion.h1>
+                            <motion.button className="mainBtn ps-5 pe-5 p-3 text-capitalize"
+                           
+                            >
                                 explore more!
-                                <span className="ms-2">...</span>
-                            </Button>
+                                <span className="ms-2">
+                                    <FaArrowRightLong />
+                                </span>
+                            </motion.button>
                         </Col>
                     </Row>
 
@@ -41,7 +53,7 @@ const Hero = () => {
                                         Velit dolor incidunt impedit doloremque
                                         provident pra sunt tenetur cupiditate
                                         nihil veniam nostrum obcae.
-                                        
+
                                     </p>
                                     <div className="text-center text-md-start">
                                         <Button className="mainBtn p-3 ps-4 pe-4">
@@ -65,7 +77,10 @@ const Hero = () => {
                                 My Projects Highlight
                             </h1>
                             <Button className="mainBtn p-2 ps-4 pe-4">
-                                Explore More! ...
+                                Explore More!
+                                <span className="ms-2">
+                                    <FaArrowRightLong />
+                                </span>
                             </Button>
                         </div>
 
@@ -129,7 +144,7 @@ const Hero = () => {
                         <span className="fs-5 fw-bold d-flex justify-content-center justify-content-md-start">-Hi Developer</span>
                     </section>
                 </Container>
-            </div>
+            </div >
         </>
     )
 }

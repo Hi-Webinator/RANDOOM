@@ -30,6 +30,10 @@
 }
 
 
+.contact iframe {
+    border-radius: 8px;
+}
+
 @media (min-width:992px) {
     .contact .title {
         font-family: Syne, sans-serif;

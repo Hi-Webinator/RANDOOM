@@ -21,12 +21,13 @@ const About = () => {
 
                     <Col xs={12} lg={5}>
                         <p className='desc'>
-                            Create custom Designs with AARONN that converts more
-                            visitors than any website. With lots of unique design,
-                            you can easily select a logo without hassle. Create custom
-                            landing logos with AARONN that converts more visitors than
-                            any website. With lots of revisions, you can easily build
-                            a logo without porbolem.
+                            Lorem ipsum dolor sit amet consectetur.
+                            Accumsan blandit pulvinar donec odio viverra
+                            quam id. Sollicitudin sit urna lectus fermentum.
+                            Sed sed dictumst nulla sit id non. Enim nulla sit
+                            felis proin felis neque iaculis sit. Consequat enim
+                            risus quam lorem neque. Ultrices felis faucibus
+                            quisque eget pharetra dui semper.
                         </p>
                     </Col>
                 </Row>
