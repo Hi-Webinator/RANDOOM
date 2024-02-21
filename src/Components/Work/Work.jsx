@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
+import { motion } from "framer-motion";
 import WorkCard from '../WorksCard/WorkCard';
 import w1 from '../../assets/Images/w-1.jpg'
 import w2 from '../../assets/Images/w-2.png'
@@ -24,66 +25,121 @@ const Work = () => {
 
                 <Row className='mb-5 mb-lg-4 d-flex justify-content-center justify-content-lg-start'>
                     <Col xs={12} md={6} lg={4} className='mb-3 mb-lg-0'>
-                        <WorkCard
-                            img={w2}
-                            subTitle="NFT"
-                            title="Bored Ape Monkey"
-                        />
+                        <motion.div
+                            initial={{ y: -400, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}
+                        >
+                            <WorkCard
+                                img={w2}
+                                subTitle="NFT"
+                                title="Bored Ape Monkey"
+                            />
+                        </motion.div>
                     </Col>
                     <Col xs={12} md={6} lg={4} className='mb-3 mb-lg-0'>
-                        <WorkCard
-                            img={w1}
-                            subTitle="NFT"
-                            title="Dark Man"
-                        />
+                        <motion.div
+                            initial={{ y: 400, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}>
+                            <WorkCard
+                                img={w1}
+                                subTitle="NFT"
+                                title="Dark Man"
+                            />
+                        </motion.div>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <WorkCard
-                            img={w3}
-                            subTitle="NFT"
-                            title="Ape Primate Art"
-                        />
+                        <motion.div
+                            initial={{ y: -400, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}
+                        >
+                            <WorkCard
+                                img={w3}
+                                subTitle="NFT"
+                                title="Ape Primate Art"
+                            />
+                        </motion.div>
                     </Col>
                 </Row>
 
                 <Row className='mb-5 mb-lg-4'>
                     <Col xs={12} md={6} lg={6} className='mb-3 mb-md-0'>
-                        <WorkCard
-                            img={w4}
-                            subTitle="NFT"
-                            title="Bear Panda Island"
-                        />
+                        <motion.div
+                            initial={{ x: -200, y: -120, opacity: 0 }}
+                            whileInView={{ x: 0, y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: .5 }}
+                        >
+                            <WorkCard
+                                img={w4}
+                                subTitle="NFT"
+                                title="Bear Panda Island"
+                            />
+                        </motion.div>
                     </Col>
                     <Col xs={12} md={6} lg={6}>
-                        <WorkCard
-                            img={w5}
-                            subTitle="NFT"
-                            title="Abstract Art"
-                        />
+                        <motion.div
+                            initial={{ x: 200, y: -120, opacity: 0 }}
+                            whileInView={{ x: 0, y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: .5 }}
+                        >
+                            <WorkCard
+                                img={w5}
+                                subTitle="NFT"
+                                title="Abstract Art"
+                            />
+                        </motion.div>
                     </Col>
                 </Row>
 
                 <Row className='mb-4 d-flex justify-content-center justify-content-lg-start'>
                     <Col xs={12} md={6} lg={4} className='mb-3 mb-lg-0'>
-                        <WorkCard
-                            img={w6}
-                            subTitle="NFT"
-                            title="Technology Metaverse"
-                        />
+                        <motion.div
+                            initial={{ y: 400, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}
+                        >
+                            <WorkCard
+                                img={w6}
+                                subTitle="NFT"
+                                title="Technology Metaverse"
+                            />
+                        </motion.div>
                     </Col>
                     <Col xs={12} md={6} lg={4} className='mb-3 mb-lg-0'>
-                        <WorkCard
-                            img={w8}
-                            subTitle="NFT"
-                            title="Alien Ghost Sci-fi"
-                        />
+                        <motion.div
+                            initial={{ y: 400, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: .4 }}
+                        >
+                            <WorkCard
+                                img={w8}
+                                subTitle="NFT"
+                                title="Alien Ghost Sci-fi"
+                            />
+                        </motion.div>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
-                        <WorkCard
-                            img={w7}
-                            subTitle="NFT"
-                            title="Dream Fantasy Ghost"
-                        />
+                        <motion.div
+                            initial={{ y: 400, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: .6 }}
+                        >
+                            <WorkCard
+                                img={w7}
+                                subTitle="NFT"
+                                title="Dream Fantasy Ghost"
+                            />
+                        </motion.div>
                     </Col>
                 </Row>
 
