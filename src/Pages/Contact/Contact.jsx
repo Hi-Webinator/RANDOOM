@@ -1,5 +1,5 @@
 import { Button, Col, Container, Form, Image, Row } from 'react-bootstrap';
-import MainHeader from '../MainHeader/MainHeader';
+import MainHeader from '../../Components/MainHeader/MainHeader';
 import { motion, useScroll } from 'framer-motion';
 
 import './contact.css';

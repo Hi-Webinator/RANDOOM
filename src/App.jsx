@@ -1,11 +1,12 @@
-import Layout from './Layout/Layout';
+import Layout from "./Layout/Layout";
+import "./App.css";
 
 const App = () => {
   return (
     <>
       <Layout />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
