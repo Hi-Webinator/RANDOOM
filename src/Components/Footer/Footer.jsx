@@ -1,51 +1,73 @@
-import { RiFacebookBoxFill, RiInstagramFill, RiWhatsappFill } from "react-icons/ri";
+import { Col, Container, Row } from "react-bootstrap";
+import {
+  RiFacebookBoxFill,
+  RiInstagramFill,
+  RiWhatsappFill,
+} from "react-icons/ri";
 
-
-import { Col, Container, Row } from 'react-bootstrap';
-import './footer.css';
+import "./footer.css";
 
 const Footer = () => {
-    const date = new Date().getFullYear();
+  const date = new Date().getFullYear();
 
-    return (
-        <div className='footer pt-5 pb-4'>
-            <Container>
-                <div className="d-flex flex-column mb-5 text-center">
-                    <h1 className="title fs-4">Get in Touch With Us</h1>
-                    <h1 className="subTitle fs-1 fw-bold text-decoration-underline">email@example.com</h1>
-                </div>
-                <Row>
-                    <Col xs={12} lg={4} className="d-flex justify-content-center mb-3 mb-lg-0">
-                        <h1 className="fs-2 fw-bold">
-                            RAND
-                            <span className="title">OO</span>
-                            M</h1>
-                    </Col>
-                    <Col xs={12} lg={4} className="d-flex justify-content-center mb-3 mb-lg-0">
-                        <div className="d-flex flex-column text-center text-lg-start">
-                            <span className='fs-5'>Street Avenue xx, YY</span>
-                            <span className='fs-5'>00-csd-12d-2</span>
-                        </div>
-                    </Col>
-                    <Col xs={12} lg={4} className="d-flex justify-content-center">
-                        <div className="d-flex flex-column ">
-                            <span className='fs-5'>+98623xxxxxx</span>
-                            <div className='d-flex align-items-center m-auto m-lg-0'>
-                                <span className='fs-5 me-3'><RiFacebookBoxFill /></span>
-                                <span className='fs-5 me-3'><RiInstagramFill /></span>
-                                <span className='fs-5'><RiWhatsappFill /></span>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-                <span className="line d-block mt-5 mb-3"></span>
-                <div className="copyright d-flex align-items-center justify-content-center fw-bold">
-                    &copy; {date} Developed By
-                    <span className="ms-1">Hi-Dev</span>
-                </div>
-            </Container>
+  return (
+    <div className="footer pt-4 pt-lg-5 pb-4">
+      <Container>
+        <div className="d-flex flex-column mb-4 mb-lg-5 text-center">
+          <h1 className="title">Get in Touch With Us</h1>
+          <h1 className="subTitle">randoom@example.com</h1>
         </div>
-    )
-}
 
-export default Footer
+        <Row>
+          <Col
+            xs={12}
+            lg={4}
+            className="d-flex justify-content-center mb-3 mb-lg-0"
+          >
+            <h2 className="fw-bold">
+              RAND
+              <span className="title">OO</span>M
+            </h2>
+          </Col>
+
+          <Col
+            xs={6}
+            lg={4}
+            className="d-flex justify-content-center mb-3 mb-lg-0"
+          >
+            <div className="street d-flex flex-column">
+              <span>Street Avenue xx, YY</span>
+              <span className="text-center">00-csd-12d-2</span>
+            </div>
+          </Col>
+
+          <Col xs={6} lg={4} className="phone d-flex justify-content-center">
+            <div className="d-flex flex-column">
+              <span className="fs-5">+98623xxxxxx</span>
+              <div className="d-flex align-items-center justify-content-center gap-3 m-auto m-lg-0">
+                <span>
+                  <RiFacebookBoxFill size={20} />
+                </span>
+                <span>
+                  <RiInstagramFill size={20} />
+                </span>
+                <span>
+                  <RiWhatsappFill size={20} />
+                </span>
+              </div>
+            </div>
+          </Col>
+        </Row>
+
+        <span className="line d-block mt-4 mt-lg-5 mb-4 mb-lg-3"></span>
+
+        <div className="copyright gap-1">
+          &copy; {date} Minted with ❤️ by
+          <span>Hi Webinator</span>
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+export default Footer;
