@@ -72,31 +72,25 @@ const Contact = () => {
         </motion.div>
 
         <div className="d-flex flex-column flex-md-row justify-content-center text-center text-md-start">
-          <motion.h5
+          <h5
             className="me-md-4 me-lg-5 mb-3 mb-md-0"
-            initial={{ x: -200, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.2, delay: 0.3 }}
+            
           >
             Casablanca, Morocco
-          </motion.h5>
+          </h5>
 
-          <motion.h5
+          <h5
             className="me-md-4 me-lg-5 mb-3 mb-md-0"
-            initial={{ x: -300, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.2, delay: 0.4 }}
+          
           >
             +212612xxxxxx
-          </motion.h5>
+          </h5>
 
-          <motion.h5
-            initial={{ x: -300, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1.2, delay: 0.5 }}
+          <h5
+           
           >
             randoom@example.com
-          </motion.h5>
+          </h5>
         </div>
       </Container>
     </div>

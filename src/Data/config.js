@@ -7,10 +7,10 @@ import work6 from "../Assets/work6.webp";
 import work7 from "../Assets/work7.webp";
 import work8 from "../Assets/work8.webp";
 
-import prj1 from "../Assets/project1.webp";
-import prj2 from "../Assets/project2.webp";
-import prj3 from "../Assets/project3.webp";
-import prj4 from "../Assets/project4.webp";
+import prj1 from "../Assets/pr1.webp";
+import prj2 from "../Assets/pr2.webp";
+import prj3 from "../Assets/pr3.webp";
+import prj4 from "../Assets/pr4.webp";
 
 // works
 export const works = [
